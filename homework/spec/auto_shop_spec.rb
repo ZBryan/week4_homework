@@ -19,6 +19,10 @@ describe 'AutoShop' do
     it '#employees returns an Array' do
       subject.employees.should be_a Array
     end
+    
+    it '#name returns shop name' do
+      subject.name.should eq 'Mr. Fix It' 
+    end
 
     it '#append_employees accepts an array of employees' do
       # setup
