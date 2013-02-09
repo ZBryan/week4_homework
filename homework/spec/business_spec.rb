@@ -3,10 +3,10 @@ require 'business'
 
 describe Business do
 
-  subject { Business.new 'Zach', '818 seattle', '9-5' }
+  subject { Business.new 'Zach', 'wa9882551'}
 
   it 'attributes are initialized' do
-    "#{subject.name}, #{subject.address}, #{subject.hours}".should eq "Zach, 818 seattle, 9-5"
+    subject.business_card.should be_a String
   end
 end
 

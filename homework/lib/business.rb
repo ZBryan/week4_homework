@@ -7,6 +7,7 @@ class Business
   def initialize name, tax_id
     @name = name
     @tax_id = tax_id
+    
   end
 
   def business_card
